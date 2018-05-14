@@ -1,0 +1,170 @@
+@keyframes bounceIn {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fillUp {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes picImage {
+    from {
+        opacity: 0;
+        transform: scale(1.2) translateY(-1rem);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+@keyframes picShadow {
+    from {
+        opacity: 0;
+        transform: scale(1.2) translateY(4rem);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.1) translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomOut {
+    from {
+        opacity: 0;
+        transform: scale(1.05);
+    }
+    to {
+        opacity: 0.2;
+        transform: scale(1);
+    }
+}
+
+/* Shared */
+
+.h4title,
+.is-content-right,
+.lg-menu,
+.social,
+.social1,
+.social2,
+.social3,
+.sociala,
+.social1a,
+.social2a,
+.social3a {
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
+    animation-fill-mode: both;
+}
+
+/* Initial state */
+
+.h4title,
+.is-content-right,
+.lg-menu,
+.social,
+.social1,
+.social2,
+.social3,
+.sociala,
+.social1a,
+.social2a,
+.social3a {
+    opacity: 0;
+}
+
+/* Animation triggers */
+
+.h4title {
+    animation-name: slideDown;
+}
+
+.lg-menu {
+    animation-name: bounceIn;
+}
+
+.is-content-right {
+    animation-name: slideUp;
+}
+
+.social,
+.social1,
+.social2,
+.social3 {
+    animation-name: slideUp;
+}
+
+.sociala,
+.social1a,
+.social2a,
+.social3a {
+    animation-name: slideDown;
+}
+
+/* Delays */
+
+.h4title {
+    animation-delay: 100ms;
+}
+
+.lg-menu {
+    animation-delay: 200ms;
+}
+
+.is-content-right {
+    animation-delay: 300ms;
+}
+
+.social,
+.sociala {
+    animation-delay: 500ms;
+}
+
+.social1,
+.social1a {
+    animation-delay: 600ms;
+}
+
+.social2,
+.social2a {
+    animation-delay: 700ms;
+}
+
+.social3,
+.social3a {
+    animation-delay: 800ms;
+}

@@ -1,0 +1,481 @@
+/* BULMA Loading Button */
+
+@-webkit-keyframes spinAround {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes spinAround {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+.button {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: none;
+    display: inline-flex;
+    font-size: 1rem;
+    height: 2.25em;
+    justify-content: flex-start;
+    line-height: 1.5;
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: calc(0.625em - 1px);
+    padding-right: calc(0.625em - 1px);
+    padding-top: calc(0.375em - 1px);
+    position: relative;
+    vertical-align: top;
+}
+
+.button {
+    background-color: white;
+    border-color: #dbdbdb;
+    border-width: 1px;
+    color: #363636;
+    cursor: pointer;
+    justify-content: center;
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: calc(0.375em - 1px);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.button.is-loading::after {
+    -webkit-animation: spinAround 500ms infinite linear;
+    animation: spinAround 500ms infinite linear;
+    border: 2px solid #dbdbdb;
+    border-radius: 290486px;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    content: "";
+    display: block;
+    height: 1em;
+    position: relative;
+    width: 1em;
+}
+
+.button.is-loading {
+    color: transparent !important;
+    pointer-events: none;
+}
+
+.button.is-loading::after {
+    position: absolute;
+    left: calc(50% - (1em / 2));
+    top: calc(50% - (1em / 2));
+    position: absolute !important;
+}
+
+/* END BULMA BUTTONS */
+
+/* Bulma Colors */
+
+.bulma-text-white {
+    color: hsl(0, 0%, 100%);
+}
+
+.bulma-text-black {
+    color: hsl(0, 0%, 4%);
+}
+
+.bulma-text-light {
+    color: hsl(0, 0%, 96%);
+}
+
+.bulma-text-dark {
+    color: hsl(0, 0%, 21%);
+}
+
+.bulma-text-primary {
+    color: hsl(171, 100%, 41%);
+}
+
+.bulma-text-link {
+    color: hsl(217, 71%, 53%);
+}
+
+.bulma-text-info {
+    color: hsl(204, 86%, 53%);
+}
+
+.bulma-text-success {
+    color: hsl(141, 71%, 48%);
+}
+
+.bulma-text-warning {
+    color: hsl(48, 100%, 67%);
+}
+
+.bulma-text-danger {
+    color: hsl(348, 100%, 61%);
+}
+
+/* --- BULMA BG Colors ---*/
+
+.bulma-bg-white {
+    background-color: hsl(0, 0%, 100%);
+}
+
+.bulma-bg-black {
+    background-color: hsl(0, 0%, 4%);
+}
+
+.bulma-bg-light {
+    background-color: hsl(0, 0%, 96%);
+}
+
+.bulma-bg-dark {
+    background-color: hsl(0, 0%, 21%);
+}
+
+.bulma-bg-primary {
+    background-color: hsl(171, 100%, 41%);
+}
+
+.bulma-bg-link {
+    background-color: hsl(217, 71%, 53%);
+}
+
+.bulma-bg-info {
+    background-color: hsl(204, 86%, 53%);
+}
+
+.bulma-bg-success {
+    background-color: hsl(141, 71%, 48%);
+}
+
+.bulma-bg-warning {
+    background-color: hsl(48, 100%, 67%);
+}
+
+.bulma-bg-danger {
+    background-color: hsl(348, 100%, 61%);
+}
+
+/* BULMA EXTRA COLORS */
+
+.bulma-blck-bis {
+    color: hsl(0, 0%, 7%);
+}
+
+.bulma-black-ter {
+    color: hsl(0, 0%, 14%);
+}
+
+.bulma-grey-darker {
+    color: hsl(0, 0%, 21%);
+}
+
+.bulma-grey-dark {
+    color: hsl(0, 0%, 29%);
+}
+
+.bulma-grey-light {
+    color: hsl(0, 0%, 71%);
+}
+
+.bulma-grey-lighter {
+    color: hsl(0, 0%, 86%);
+}
+
+.bulma-white-ter {
+    color: hsl(0, 0%, 96%);
+}
+
+.bulma-white-bis {
+    color: hsl(0, 0%, 98%);
+}
+
+.bulma-bg-blck-bis {
+    background-color: hsl(0, 0%, 7%);
+}
+
+.bulma-bg-black-ter {
+    background-color: hsl(0, 0%, 14%);
+}
+
+.bulma-bg-grey-darker {
+    background-color: hsl(0, 0%, 21%);
+}
+
+.bulma-bg-grey-dark {
+    background-color: hsl(0, 0%, 29%);
+}
+
+.bulma-bg-grey-light {
+    background-color: hsl(0, 0%, 71%);
+}
+
+.bulma-bg-grey-lighter {
+    background-color: hsl(0, 0%, 86%);
+}
+
+.bulma-bg-white-ter {
+    background-color: hsl(0, 0%, 96%);
+}
+
+.bulma-bg-white-bis {
+    background-color: hsl(0, 0%, 98%);
+}
+
+/* End Bulma Colors */
+
+/* --- BULMA DELETE BUTTON ---*/
+
+.delete {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: rgba(10, 10, 10, 0.2);
+    border: none;
+    border-radius: 290486px;
+    cursor: pointer;
+    display: inline-block;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 0;
+    height: 20px;
+    max-height: 20px;
+    max-width: 20px;
+    min-height: 20px;
+    min-width: 20px;
+    outline: none;
+    position: relative;
+    vertical-align: top;
+    width: 20px;
+}
+
+.delete::before,
+.delete::after {
+    background-color: white;
+    content: "";
+    display: block;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -webkit-transform-origin: center center;
+    transform-origin: center center;
+}
+
+.delete::before {
+    height: 2px;
+    width: 50%;
+}
+
+.delete::after {
+    height: 50%;
+    width: 2px;
+}
+
+.delete:hover,
+.delete:focus {
+    background-color: rgba(10, 10, 10, 0.3);
+}
+
+.delete:active {
+    background-color: rgba(10, 10, 10, 0.4);
+}
+
+.is-small.delete {
+    height: 16px;
+    max-height: 16px;
+    max-width: 16px;
+    min-height: 16px;
+    min-width: 16px;
+    width: 16px;
+}
+
+.is-medium.delete,
+.is-medium.modal-close {
+    height: 24px;
+    max-height: 24px;
+    max-width: 24px;
+    min-height: 24px;
+    min-width: 24px;
+    width: 24px;
+}
+
+.is-large.delete {
+    height: 32px;
+    max-height: 32px;
+    max-width: 32px;
+    min-height: 32px;
+    min-width: 32px;
+    width: 32px;
+}
+
+/* --- END BULMA DELETE BUTTON --*/
+
+/* Bulma Textarea --*/
+
+.textarea {
+    background-color: white;
+    border-color: #dbdbdb;
+    color: #363636;
+    box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.1);
+    max-width: 100%;
+    width: 100%;
+}
+
+.input::-moz-placeholder,
+.textarea::-moz-placeholder {
+    color: rgba(54, 54, 54, 0.3);
+}
+
+.input::-webkit-input-placeholder,
+.textarea::-webkit-input-placeholder {
+    color: rgba(54, 54, 54, 0.3);
+}
+
+.input:-moz-placeholder,
+.textarea:-moz-placeholder {
+    color: rgba(54, 54, 54, 0.3);
+}
+
+.input:-ms-input-placeholder,
+.textarea:-ms-input-placeholder {
+    color: rgba(54, 54, 54, 0.3);
+}
+
+.input:hover,
+.input.is-hovered,
+.textarea:hover,
+.textarea.is-hovered {
+    border-color: #b5b5b5;
+}
+
+.input:focus,
+.input.is-focused,
+.input:active,
+.input.is-active,
+.textarea:focus,
+.textarea.is-focused,
+.textarea:active,
+.textarea.is-active {
+    border-color: #3273dc;
+    box-shadow: 0 0 0 0.125em rgba(50, 115, 220, 0.25);
+}
+
+.input.is-small,
+.textarea.is-small {
+    border-radius: 2px;
+    font-size: 0.75rem;
+}
+
+.input.is-medium,
+.textarea.is-medium {
+    font-size: 1.25rem;
+}
+
+.input.is-large,
+.textarea.is-large {
+    font-size: 1.5rem;
+}
+
+.input.is-fullwidth,
+.textarea.is-fullwidth {
+    display: block;
+    width: 100%;
+}
+
+.input.is-inline,
+.textarea.is-inline {
+    display: inline;
+}
+
+/* End Bulma textarea*/
+
+/* Bulma dropdown-devider */
+
+.dropdown-divider {
+    background-color: #dbdbdb;
+    border: none;
+    display: block;
+    height: 1px;
+    margin: 0.5rem 0;
+}
+
+.navbar-divider {
+    background-color: whitesmoke;
+    border: none;
+    display: none;
+    height: 2px;
+    margin: 0.5rem 0;
+}
+
+.navbar-divider {
+    display: block;
+}
+
+/* End Bulma Dorpdown-devider */
+
+/* BULMA common */
+
+.button,
+.input,
+.textarea,
+.select select,
+.file-cta,
+.file-name,
+.pagination-previous,
+.pagination-next,
+.pagination-link,
+.pagination-ellipsis {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    box-shadow: none;
+    display: inline-flex;
+    font-size: 1rem;
+    height: 2.25em;
+    justify-content: flex-start;
+    line-height: 1.5;
+    padding-bottom: calc(0.375em - 1px);
+    padding-left: calc(0.625em - 1px);
+    padding-right: calc(0.625em - 1px);
+    padding-top: calc(0.375em - 1px);
+    position: relative;
+    vertical-align: top;
+}
+
+/* End BULMA Common */
+
+.list-group,
+.breadcrumb {
+    text-transform: uppercase;
+    font-size: 0.9em;
+}
+
+.list-group a.active {
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+#qstatus,
+#qstatus1 {
+    -webkit-box-shadow: 0 10px 20px rgba(0, 2, 3, 0.35);
+    box-shadow: 0 10px 20px rgba(0, 2, 3, 0.35);
+}
